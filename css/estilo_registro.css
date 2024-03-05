@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080101;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/casino.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    text-align: center; /* Centra el texto horizontalmente */
+    height: 100%;
+    border-bottom: 4px solid #000000; /* Agrega una línea de borde inferior */
+    padding-bottom: 10px; /* Añade espacio debajo del encabezado */
+}
+
+.logo {
+    background-image: url('/images/logo_casino.png');
+    width: 120px;
+    margin-top: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #4e0a5fc7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #080101; /* Cambia este valor al color deseado para el texto del contenedor */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+#Mensajes-de-error {
+    color: red;
+    margin-bottom: 15px;
+}
