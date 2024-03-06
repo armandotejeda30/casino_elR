@@ -12,10 +12,11 @@ body {
 
 
 h1 {
-    text-align: center; /* Centra el texto horizontalmente */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
     height: 100%;
-    border-bottom: 4px solid #000000; /* Agrega una línea de borde inferior */
-    padding-bottom: 10px; /* Añade espacio debajo del encabezado */
+    border-bottom: 4px solid #000000;
+    padding-bottom: 10px;
 }
 
 .logo {
@@ -50,6 +51,7 @@ form {
 }
 
 label {
+    align-self: flex-end;
     font-weight: bold;
 }
 
@@ -63,15 +65,15 @@ input {
 
 button {
     padding: 10px;
-    background-color: #0066cc;
-    color: #fff;
+    background-color: #720816;
+    color: #070101;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #004080;
+    background-color: #550631;
 }
 
 #Mensajes-de-error {

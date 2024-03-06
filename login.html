@@ -1,18 +1,35 @@
-<!-- Login
-    campo de user y password 
-    link para recuperar la password
-    boton para inicias sesion -->
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+    <div class="container">
+        <h1>
+            <div class="logo">
+                <img src="/images/logo_casino.png" alt="logo-casino">
+            </div>
+            INGRESO
+        </h1>
+        <form id="login_ID" action="#" method="post">
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email_ID" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password_ID" name="contraseña" required>
+            </div>
+
+            <div id="Mensajes-de-error"></div>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
 </body>
 </html>
