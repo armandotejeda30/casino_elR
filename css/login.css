@@ -1,18 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #080101;
+    background-color: #130f18;
+    
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('/images/casino.jpg');
+    /*background-image: url('/images/casino.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 
+.login_ID {
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    
+}
+
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
     text-align: center;
     height: 100%;
     border-bottom: 4px solid #000000;
@@ -20,7 +28,7 @@ h1 {
 }
 
 .logo {
-    background-image: url('/images/logo_casino.png');
+    /*background-image: url('/images/logo_casino.png');*/
     width: 120px;
     margin-top: 8px;
     display: block;
@@ -34,7 +42,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #4e0a5fc7;
+    background-color: #333;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #080101; /* Cambia este valor al color deseado para el texto del contenedor */

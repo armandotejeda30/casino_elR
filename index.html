@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <style>
-        body{
-            background-color: black;
-            color: white;
-        }
-    </style>
     <header>
         <div class="logo">
             <img src="/images/logo_casino.png" alt="logo-casino">
         </div>
-        <input type="checkbox" id="nav-check" hidden>
+        <input type="checkbox" id="nav_check" hidden>
         <nav>
-            <ul>
-                <li><a href="">Games</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Team</a></li>
-            </ul>
+            <div class="logo">
+                <img src="/images/logo_casino.png" alt="logo-casino">
 
-            <a href="/login.html">Log in</a>
+            </div>
+            <ul>
+                <li><a href="#Games">Games</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+            
+            <label for="nav-check" class="hamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            
         </nav>
     </header>
     
@@ -46,22 +49,30 @@
         <img src="/images/minas.jpg" alt="img-minas">
         
         <h2 id = "About">About</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi beatae modi, officia doloremque ea tenetur molestiae consequatur nobis, adipisci laboriosam autem qui exercitationem delectus mollitia, quam minima dolorum! Et, praesentium.</p>
+        <p>Lorem ipsum, dolor sitlore amet consectetur adipisicing elit. Quasi beatae modi, officia doloremque ea tenetur molestiae consequatur nobis, adipisci laboriosam autem qui exercitationem delectus mollitia, quam minima dolorum! Et, praesentium.</p>
         <img src="/images/casino.jpg" alt="foto-casino">
 
         <h2 id = "team">Team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime architecto enim vero voluptas error quaerat recusandae sapiente fuga impedit molestias, pariatur labore non maiores excepturi quam facere, ad repellat eos!</p>
-        <img src="/images/men1.jpg" alt="men2">
-        <img src="/images/men2.jpg" alt="men2">
+        
+        <div class="card">
+            <img src="/images/men1.jpg" alt="men1">
+            <div>
+                <h2>Armando Tejeda</h2>
+                <h3>Estudiante de software 🎮</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://github.com/armandotejeda30" target="_blank">Instagram</a>
+            </div>
+        </div>
+        
 
     </section>
-
+    <hr>
     <footer>
         <p>Connect with us:</p>
         <ul>
-            <li><a href="https://www.instagram.com/armandotejeda30/">Instagram</a></li>
-            <li><a href="https://github.com/armandotejeda30">Github</a></li>
-            <li><a href="https://github.com/OmarPineda20">Github</a></li>
+            <li><a href="https://www.instagram.com/armandotejeda30/" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/armandotejeda30" target="_blank">Github</a></li>
+            <li><a href="https://github.com/OmarPineda20" target="_blank">Github</a></li>
         </ul>
         <p>© 2023 Deluxe casino, Inc. All rights reserved.</p>
     </footer>
