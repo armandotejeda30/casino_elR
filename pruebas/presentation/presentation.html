@@ -7,12 +7,24 @@
     <link rel="stylesheet" href="/pruebas/presentation/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#team">About</a></li>
+            </ul>
+        </nav>
+        <a class="login" href="/login.html"><button>Log In</button></a>
+    </header>
+
+    <!-- background -->
     <div class="absolute inset-0 justify-center">
         <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
         <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
     </div>
     <main>
-        <section>
+        <section> <!-- Presentacion del casino -->
             <div class="text">
                 <h1>
                     <span>CASINO</span>
@@ -20,19 +32,29 @@
                 </h1>
             </div>
         </section>
+
+        <!-- Informacion sobre el casino -->
+        <section> 
+            <div id="inicio" class="card">
+                <h2>Casino DELUXE</h2>
+                <h3>Explora la emoción sin límites en nuestro casino. Luces brillantes, juegos emocionantes y una experiencia inigualable. ¡Bienvenido a la diversión que nunca para!</h3>
+            </div>
+        </section>
+
+        <!-- Informacion del Equipo -->
         <section>
-            <h3>Our Team</h3>
+            <h3 id="team">Our Team</h3>
             <div class="card">
-                <img src="/images/men1.jpg" alt="men1">
+                <img src="/images/img-atm.jpeg" alt="men1">
                 <div>
                     <h2>Armando Tejeda</h2>
                     <h3>Estudiante de software 🎮</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Tengo novia y la amo</p>
                     <a href="https://github.com/armandotejeda30" target="_blank">Instagram</a>
                 </div>
             </div>
             <div class="card">
-                <img src="/images/men2.jpg" alt="men2">
+                <img src="/images/img-pineda.jpeg" alt="men2">
                 <div>
                     <h2>Omar Pineda</h2>
                     <h3>Estudiante de software 🎮</h3>
@@ -40,6 +62,11 @@
                     <a href="https://github.com/armandotejeda30" target="_blank">Instagram</a>
                 </div>
             </div>
+        </section>
+
+        <!-- Informacion de los juegos -->
+        <section>
+
         </section>
     </main>
 </body>
