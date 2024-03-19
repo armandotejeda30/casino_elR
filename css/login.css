@@ -5,10 +5,10 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    /*background-image: url('/images/casino.jpg');
+    background-image: url('/images/casino.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 
 
@@ -16,7 +16,6 @@ body {
     border-radius: 10px;
     background: transparent;
     backdrop-filter: blur(50px);
-    
 }
 
 h1 {
@@ -28,7 +27,6 @@ h1 {
 }
 
 .logo {
-    /*background-image: url('/images/logo_casino.png');*/
     width: 120px;
     margin-top: 8px;
     display: block;
@@ -42,16 +40,16 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    background-color: #333;
+    background-color: #585757;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #080101; /* Cambia este valor al color deseado para el texto del contenedor */
+    color: #080101;
 }
 
 form {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .form-group {
@@ -59,6 +57,7 @@ form {
 }
 
 label {
+    display: flex;
     align-self: flex-end;
     font-weight: bold;
 }
@@ -73,7 +72,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #720816;
+    background-color: #f523e6;
     color: #070101;
     border: none;
     border-radius: 5px;
@@ -81,10 +80,5 @@ button {
 }
 
 button:hover {
-    background-color: #550631;
-}
-
-#Mensajes-de-error {
-    color: red;
-    margin-bottom: 15px;
+    background-color: #54064b;
 }

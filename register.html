@@ -1,18 +1,43 @@
-<!-- Registro 
-    1) Creacion de user y password <- para iniciar sesion 
-    2) datos pesonales
-        telefono, correo, nombre, apellidos, fecha nacimiento, ciudad 
-        verificacion ine  -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Crea una cuenta</h1>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+      <div class="form-group">
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+        <p><small style="color: gray;">*La contraseña debe contener al menos 8 caracteres</small></p>
+      </div>
+      <div class="form-group">
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" required>
+      </div>
+      <div class="form-group">
+        <label for="INE">Clave de Elector:</label>
+        <input type="text" id="INE" name="INE" required>
+      </div>
+      <div class="form-group">
+        <label for="archivo" style="color: red;">Ingresa una fotografía clara de tu INE</label>
+        <input type="file" id="archivo" name="archivo" accept=".PDF,.JPG">
+        <small>Formatos de archivo permitidos: JPG, PDF</small>
+      </div>
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
 </body>
 </html>
