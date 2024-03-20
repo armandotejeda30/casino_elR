@@ -60,7 +60,30 @@ header {
 }
 
 
+/* video y texto */
 
+section .wrapper {
+    margin: 150px auto;
+    width: 70%;
+}
+
+section .vid-casino {
+    max-width: 550px;
+    
+    float: left;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+section .text-box h2 {
+    font-size: 42px;
+    color: #09f;
+   
+}
+
+section .text-box p {
+    line-height: 1.5;
+}
 /* background animated */
 .absolute {
     position: absolute;
