@@ -63,4 +63,14 @@ body {
   
   button:hover {
     background-color: #54064b;
-  }  
+  }
+
+a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #f523e6
+ }
+    
+a:hover {
+        color: #54064b;
+ }
