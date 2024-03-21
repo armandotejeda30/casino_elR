@@ -1,7 +1,3 @@
-
-![Logo]()
-
-
 # Casino Web 
 
 Proyecto de desarrollo web centrado en un casino en línea, que incluirá juegos de azar. Este proyecto está siendo realizado como parte del curso de Ingeniería de Software del cuarto semestre.
