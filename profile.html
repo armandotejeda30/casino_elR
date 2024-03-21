@@ -4,8 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="/images/icons/iconn_deluxe.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/profile.css">
 </head>
 <body>
-    
+    <!-- Navbar con  acceso al perfil -->
+    <header>
+        <div class="nav-bar">
+            <nav>
+                <a href="/home.html"><img src="/images/logo_casino.png" alt="logo" class="logo"></a>
+                <ul>
+                    <li><a href="">Wallet</a></li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+                <img src="/images/icons/user-icon.png" alt="user" class="user-icon" onclick="ToggleMenu()">
+                <div class="menu-profile" id="sub_menu">
+                    <div class="menu">
+                        <div class="user-info">
+                            <img src="/images/icons/user-icon.png" alt="icon-user">
+                            <h3>username</h3>
+                            <h2>$99999</h2>
+                        </div>
+                        <hr>
+                        <a href="/profile.html" class="menu-link">
+                            <img src="/images/icons/profile-icon.png" alt="profile-icon">
+                            <p>Profile</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="profile.html#wallet" class="menu-link">
+                            <img src="/images/icons/cc-icon.png" alt="cc-icon">
+                            <p>Wallet</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="/pruebas/presentation/presentation.html" class="menu-link">
+                            <img src="/images/icons/logout-icon.png" alt="logout-icon">
+                            <p>Log out</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card__img"><img src="/images/casinoFondo.jpg" alt="fondo"></div>
+            <div class="card__avatar"><img src="/images/img-atm.jpeg" alt="yo"></div>
+            <div class="card__title">Armando T.</div>
+            <div class="card__subtitle"><Em>Estudiante de software</Em></div>
+        </div>
+        <div class="container-wallet">
+            <div class="card cart">
+              <label class="title">CHECKOUT</label>
+              <div class="steps">
+                <div class="step">
+                  <div>
+                    <span>SHIPPING</span>
+                    <p>0001 Uadeo</p>
+                    <p>Sinaloa, Mexico</p>
+                  </div>
+                  <hr>
+                  <div>
+                    <span>PAYMENT METHOD</span>
+                    <p>Visa</p>
+                    <p>**** **** **** 9213</p>
+                  </div>
+                  <hr>
+                  <div class="promo">
+                    <span>HAVE A PROMO CODE?</span>
+                    <form class="form">
+                      <input type="text" placeholder="Enter a Promo Code" class="input_field">
+                      <button>Apply</button>
+                    </form>
+                  </div>
+                  <hr>
+                  <div class="payments">
+                    <span>PAYMENT</span>
+                    <div class="details">
+                      <span>Subtotal:</span>
+                      <span>$990.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card checkout">
+              <div class="footer">
+                <label class="price">$990</label>
+                <button class="checkout-btn">Checkout</button>
+              </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

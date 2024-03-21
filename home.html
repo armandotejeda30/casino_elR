@@ -3,23 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="shortcut icon" href="/images/icons/iconn_deluxe.png" type="image/x-icon">
+    
 </head>
 <body>
+    <!-- Navbar con  acceso al perfil -->
     <header>
-        <nav>
-            <a href="/index.html"><img src="/images/logo_casino.png" alt="logo"></a>
-            <ul>
-                <li>
-                    <p>$1000 Armando Tejeda</p>
-                    <a href="/profile.html"><img src="/images/usuario.png" alt="user"></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <footer>
+        <div class="nav-bar">
+            <nav>
+                <img src="/images/logo_casino.png" alt="logo" class="logo">
+                <h3>username</h3>
+                <h2>$99999</h2>
+                <img src="/images/icons/user-icon.png" alt="user" class="user-icon" onclick="ToggleMenu()">
 
-    </footer>
+                <div class="menu-profile" id="sub_menu">
+                    <div class="menu">
+                        <div class="user-info">
+                            <img src="/images/icons/user-icon.png" alt="icon-user">
+                            <h3>username</h3>
+                            <h2>$99999</h2>
+                        </div>
+                        <hr>
+                        <a href="/profile.html" class="menu-link">
+                            <img src="/images/icons/profile-icon.png" alt="profile-icon">
+                            <p>Profile</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="profile.html#wallet" class="menu-link">
+                            <img src="/images/icons/cc-icon.png" alt="cc-icon">
+                            <p>Wallet</p>
+                            <span>></span>
+                        </a>
+
+                        <a href="/pruebas/presentation/presentation.html" class="menu-link">
+                            <img src="/images/icons/logout-icon.png" alt="logout-icon">
+                            <p>Log out</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Choose your game . . .</h1>
+
+    <!-- Seccion de juegos (2 - ruleta rusa y carrera de caballos)-->
+    <div class="games">
+        <div class="games-container">
+            <a href="/game/ruleta/index.html"><img src="/images/ruleta-img.jpg" alt="ruleta rusa"></a>
+            <a href="/game/caballos/index.html"><img src="/images/caballo.jpg" alt="carrerade caballos"></a>   
+        </div>
+    </div>
+    <script>
+        let sub_menu = document.getElementById("sub_menu");
+
+        function ToggleMenu(){
+            sub_menu.classList.toggle("open"); 
+        }
+    </script>
+
 </body>
 </html>
