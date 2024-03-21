@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ruleta</title>
-  </head>
-  <body style="text-align: center; padding: 0; border: 0; margin: 0;">\
-    
-    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/casino_elR.loader.js"></script>
-    <script>
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style-index.css">
+    <link rel="shortcut icon" href="/images/icons/iconn_deluxe.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#team">About</a></li>
+            </ul>
+        </nav>
+        <a class="login" href="/login.html"><button>Log In</button></a>
+    </header>
 
-        var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
+    <!-- background -->
+    <div class="absolute inset-0 justify-center">
+        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+    </div>
+    <main>
+        <section> <!-- Presentacion del casino -->
+            <div class="text">
+                <h1>
+                    <span>CASINO</span>
+                    <span>DELUXE</span>
+                </h1>
+            </div>
+        </section>
 
-        document.body.style.textAlign = "left";
-      }
+        <section>
+        <!-- Informacion sobre el casino -->
+            <div class="wrapper">
+                <video class="vid-casino" autoplay>
+                    <source src="/images/CASINO.mp4" type="video/mp4">
+                </video>
+                <div class="text-box">
+                    <h2 id="home">Deluxe</h2>
+                    <p>En Deluxe, las luces deslumbran, las apuestas son altas y los secretos acechan en cada esquina. 
+                        ¿Te atreves a desafiar al destino y probar tu suerte en este mundo de lujo y riesgo?</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Informacion del Equipo -->
+        <section>
+            <h3 id="team">Our Team</h3>
+            <div class="card">
+                <img src="/images/img-atm.jpeg" alt="men1">
+                <div>
+                    <h2>Armando Tejeda</h2>
+                    <h3>Estudiante de software 🎮</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur</p>
+                    <a href="https://instagram.com/armandotejeda30" target="_blank">Instagram</a>
+                </div>
+            </div>
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/casino_elR.data.br",
-        frameworkUrl: "Build/casino_elR.framework.js.br",
-        codeUrl: "Build/casino_elR.wasm.br",
-        streamingAssetsUrl: "StreamingAssets",
-        companyName: "deluxe",
-        productName: "ruleta",
-        productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
-    </script>
-  </body>
+            <div class="card">
+                <img src="/images/img-pineda.jpeg" alt="men2">
+                <div>
+                    <h2>Omar Pineda</h2>
+                    <h3>Estudiante de software 🎮</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="https://instagram.com/omarpinedaa" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
